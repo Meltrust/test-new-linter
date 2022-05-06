@@ -1,6 +1,6 @@
 console.log("hello world")
 
-name_user = Miguel;
+const nameUser = "Miguel";
 
 if (name_user) {
   console.log(`hi ${name_user}`)

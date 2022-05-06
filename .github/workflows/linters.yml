@@ -39,8 +39,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
       - name: Check node_modules existence
         run: [ -d "node_modules/" ] && echo "Directory node_modules/ was pushed to the repo.  Please delete it and try again." && exit 1

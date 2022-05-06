@@ -41,4 +41,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Check node_modules existence
         run: |
-          if [ -d "node_modules/" ]; then echo "Directory node_modules/ was pushed to the repo.  Please delete it and try again." && exit 1 fi
+          if [ -d "node_modules/" ]; then echo "Directory node_modules/ was pushed to the repo.  Please delete it and try again." && exit 1; fi

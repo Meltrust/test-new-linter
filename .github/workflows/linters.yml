@@ -34,11 +34,3 @@ jobs:
           [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
-  node_modules_checker:
-    name: NodeModulesCheck
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: "12.x"
-    - name: Check node_modules existence
-      run: [ -d "node_modules/" ] && echo "Directory node_modules/ was pushed to the repo.  Please delete it and try again." && exit 1

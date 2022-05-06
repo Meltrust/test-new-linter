@@ -1,7 +1,7 @@
-console.log("hello world")
+console.log('hello world')
 
-const nameUser = "Miguel";
+const nameUser = 'Miguel';
 
-if (name_user) {
-  console.log(`hi ${name_user}`)
+if (nameUser) {
+  console.log(`hi ${nameUser}`)
 }
